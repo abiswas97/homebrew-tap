@@ -5,23 +5,23 @@
 class Sentei < Formula
   desc "A TUI tool for cleaning up stale git worktrees"
   homepage "https://github.com/abiswas97/sentei"
-  version "1.0.0"
+  version "1.1.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/abiswas97/sentei/releases/download/v1.0.0/sentei_1.0.0_darwin_amd64.tar.gz"
-      sha256 "81a6cbaec96aa70eb291b985f5e1638a7473c66fb9b42ee4f8e4b8116003f215"
+      url "https://github.com/abiswas97/sentei/releases/download/v1.1.0/sentei_1.1.0_darwin_amd64.tar.gz"
+      sha256 "5298665e0226c3bb439536f23d4b796dd694fd540cece87818a37c7f8e08f1f8"
 
-      def install
+      define_method(:install) do
         bin.install "sentei"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/abiswas97/sentei/releases/download/v1.0.0/sentei_1.0.0_darwin_arm64.tar.gz"
-      sha256 "df04705b6d8dc6a6466b3632beb6f74aacb4b7338245206537ab8f112472a015"
+      url "https://github.com/abiswas97/sentei/releases/download/v1.1.0/sentei_1.1.0_darwin_arm64.tar.gz"
+      sha256 "f04d5f25cc54edb93b9720cb634eb8316b6a04a5d7edc1cafc8535f5ca290a81"
 
-      def install
+      define_method(:install) do
         bin.install "sentei"
       end
     end
@@ -29,16 +29,16 @@ class Sentei < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/abiswas97/sentei/releases/download/v1.0.0/sentei_1.0.0_linux_amd64.tar.gz"
-      sha256 "79439672dc71627efe814b8577c03d3ced6622ce6f4449f683aa76d0c9df16aa"
-      def install
+      url "https://github.com/abiswas97/sentei/releases/download/v1.1.0/sentei_1.1.0_linux_amd64.tar.gz"
+      sha256 "7b8c919a8c42ba2d2909bb2e1bb635c7bcbb63cb6f5311be4f9656751fc75bae"
+      define_method(:install) do
         bin.install "sentei"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/abiswas97/sentei/releases/download/v1.0.0/sentei_1.0.0_linux_arm64.tar.gz"
-      sha256 "70c278f7251b037a6ee3103e73ed6b559befd4b88035e0a413b033bf0dbdb7bf"
-      def install
+      url "https://github.com/abiswas97/sentei/releases/download/v1.1.0/sentei_1.1.0_linux_arm64.tar.gz"
+      sha256 "0623d3b6e2526f69808082bb79c843dd9e03652da2c236e7555c98c8788eeccd"
+      define_method(:install) do
         bin.install "sentei"
       end
     end
