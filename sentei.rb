@@ -5,21 +5,21 @@
 class Sentei < Formula
   desc "A TUI tool for cleaning up stale git worktrees"
   homepage "https://github.com/abiswas97/sentei"
-  version "1.5.0"
+  version "1.6.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/abiswas97/sentei/releases/download/v1.5.0/sentei_1.5.0_darwin_amd64.tar.gz"
-      sha256 "c99bdee51e9ff62ebc2017c3517d02747d6f8aac46d4cb3f9cbcf3bdbf5ea85c"
+      url "https://github.com/abiswas97/sentei/releases/download/v1.6.0/sentei_1.6.0_darwin_amd64.tar.gz"
+      sha256 "cc754eb46f5d86520906ae83cb02a03d3d52b684e19a08221dc1cdd3eee494af"
 
       def install
         bin.install "sentei"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/abiswas97/sentei/releases/download/v1.5.0/sentei_1.5.0_darwin_arm64.tar.gz"
-      sha256 "54e01659d4f720787b915a70bef6a9bcb883f0f4eea9cae8cd85567b4f26ddac"
+      url "https://github.com/abiswas97/sentei/releases/download/v1.6.0/sentei_1.6.0_darwin_arm64.tar.gz"
+      sha256 "ab18b247a895893b80c3a8a4b9b573047bb1dbeb791d2cd91fdf17d2d875735e"
 
       def install
         bin.install "sentei"
@@ -29,15 +29,15 @@ class Sentei < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/abiswas97/sentei/releases/download/v1.5.0/sentei_1.5.0_linux_amd64.tar.gz"
-      sha256 "d9b2f18379b5e075c3589831ff377e6716c45e64cba77b4c887f92df1b68e31c"
+      url "https://github.com/abiswas97/sentei/releases/download/v1.6.0/sentei_1.6.0_linux_amd64.tar.gz"
+      sha256 "94b58fd6c965f271a0db580ae0d3da4a92fa9eed0bf98330e6516fc4bd7b3bb6"
       def install
         bin.install "sentei"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/abiswas97/sentei/releases/download/v1.5.0/sentei_1.5.0_linux_arm64.tar.gz"
-      sha256 "5213c1d75ce1ba648f10905201ccb7e8f943309b3a308c86a53111399471d997"
+      url "https://github.com/abiswas97/sentei/releases/download/v1.6.0/sentei_1.6.0_linux_arm64.tar.gz"
+      sha256 "5d0cdb78bbf4565eba9b47bc5294b4d7624ff495e724720c7df44385b540d241"
       def install
         bin.install "sentei"
       end
