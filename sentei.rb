@@ -11,7 +11,7 @@ class Sentei < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/abiswas97/sentei/releases/download/v1.7.0/sentei_1.7.0_darwin_amd64.tar.gz"
-      sha256 "c384dacdda0f510cd399a18c80ab8f94b3f3953a6f4213ba91be764761c80191"
+      sha256 "5e35d76c9082846f8474307359748aab5ccd7e738d249405bfb0606968821177"
 
       define_method(:install) do
         bin.install "sentei"
@@ -19,7 +19,7 @@ class Sentei < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/abiswas97/sentei/releases/download/v1.7.0/sentei_1.7.0_darwin_arm64.tar.gz"
-      sha256 "3ac7424cb13fcbd20c8d27b054c4338434eb6ab25c80ff00998fdfd54e9d408a"
+      sha256 "ea0f3173c01eb5df34b25de2080d85c6ccf23f3899f732696a2d145f48125457"
 
       define_method(:install) do
         bin.install "sentei"
@@ -30,14 +30,14 @@ class Sentei < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/abiswas97/sentei/releases/download/v1.7.0/sentei_1.7.0_linux_amd64.tar.gz"
-      sha256 "fac022cf8c9418df7c0aba279471e73d556f2695f92073ecdc4ebf3a48aadc11"
+      sha256 "aa3507d8f277fcf7591a836bcecec3fdc21a291aac08262699050fa88a3a5f1f"
       define_method(:install) do
         bin.install "sentei"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/abiswas97/sentei/releases/download/v1.7.0/sentei_1.7.0_linux_arm64.tar.gz"
-      sha256 "fe6406f6dc8060da655855970f761e2df909e6a5c767f544f5b9775ea1599175"
+      sha256 "f9b4d683f7174bfa62544a7842221d1646911ca92dd624edb5c4b591fed79426"
       define_method(:install) do
         bin.install "sentei"
       end
