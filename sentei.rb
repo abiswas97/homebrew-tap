@@ -5,21 +5,21 @@
 class Sentei < Formula
   desc "A TUI tool for cleaning up stale git worktrees"
   homepage "https://github.com/abiswas97/sentei"
-  version "1.12.0"
+  version "1.13.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/abiswas97/sentei/releases/download/v1.12.0/sentei_1.12.0_darwin_amd64.tar.gz"
-      sha256 "11b159dfa5cba84c060be7361512eec35875923496ee15f108c3661fa4bfe9bb"
+      url "https://github.com/abiswas97/sentei/releases/download/v1.13.0/sentei_1.13.0_darwin_amd64.tar.gz"
+      sha256 "1870daf3e27a3a33487fef31e932ab0de25311ae2ce3045a6fd3a35d44b4cb83"
 
       define_method(:install) do
         bin.install "sentei"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/abiswas97/sentei/releases/download/v1.12.0/sentei_1.12.0_darwin_arm64.tar.gz"
-      sha256 "17554e7ca4b1ea15aa17d252751447819dfe22937ed7b1021dbfa74b67cda2a7"
+      url "https://github.com/abiswas97/sentei/releases/download/v1.13.0/sentei_1.13.0_darwin_arm64.tar.gz"
+      sha256 "0d505bd09f5932425077dbe8b8665c7b1cf867fd66106672380d2c730dc32084"
 
       define_method(:install) do
         bin.install "sentei"
@@ -29,15 +29,15 @@ class Sentei < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/abiswas97/sentei/releases/download/v1.12.0/sentei_1.12.0_linux_amd64.tar.gz"
-      sha256 "550a6b4684068c674575bf184f605fb45373e399e690fc67b8f48a3fe70d7e60"
+      url "https://github.com/abiswas97/sentei/releases/download/v1.13.0/sentei_1.13.0_linux_amd64.tar.gz"
+      sha256 "38e26c4dbfe7cbf37475ba24eca67108fbec5501686bbc83ab0c5976c5968fb6"
       define_method(:install) do
         bin.install "sentei"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/abiswas97/sentei/releases/download/v1.12.0/sentei_1.12.0_linux_arm64.tar.gz"
-      sha256 "cd03ea0d94a2a770a62315647f6098a19cfdea37db3c4ddbcfa4b148dd41aabb"
+      url "https://github.com/abiswas97/sentei/releases/download/v1.13.0/sentei_1.13.0_linux_arm64.tar.gz"
+      sha256 "77bc1482c32b7507b8b7bc518b1916ab0b3dd822c007e8aa46737dd33ada7306"
       define_method(:install) do
         bin.install "sentei"
       end
